@@ -1,0 +1,205 @@
+@charset "UTF-8";
+body {
+  font-family: 'roboto', sans-serif;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  background-color: #000000;
+}
+
+.color {
+  color: #e35505;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-bg {
+  background-color: #b55823;
+}
+
+.header-bg .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+.header-bg .header .header-nav #menu-toggle {
+  display: none;
+}
+
+.header-bg .header .header-nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-bg .header .header-nav .menu-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.header-bg .header .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: end;
+}
+
+.header-bg .header .contacts .contact-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.slider-block {
+  height: 720px;
+  border-bottom: 2px solid #ababab;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider-block .slider-title {
+  font-size: 44px;
+  text-align: center;
+  padding-top: 35px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-nav {
+    /* скрываем чекбокс */
+    /* стилизуем кнопку */
+    /* добавляем "гамбургер" */
+    /* контейнер меню */
+    /* элементы меню */
+  }
+  .header-nav .hamburger-menu {
+    display: block;
+  }
+  .header-nav #menu-toggle {
+    opacity: 0;
+  }
+  .header-nav .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 0;
+    right: 18px;
+    width: 28px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .header-nav .menu-btn > span,
+  .header-nav .menu-btn > span::before,
+  .header-nav .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .header-nav .menu-btn > span::before {
+    content: '';
+    top: -7px;
+  }
+  .header-nav .menu-btn > span::after {
+    content: '';
+    top: 7px;
+  }
+  .header-nav .nav-menu {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    width: 100vw;
+    height: 80%;
+    margin: 0;
+    padding: 5px 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    -webkit-box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+    opacity: 0.95;
+  }
+  .header-nav .menu-link {
+    display: block;
+    padding: 12px 36px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .header-nav .menu-link:hover {
+    background-color: #CFD8DC;
+  }
+  .header-nav #menu-toggle:checked ~ .menu-btn > span {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header-nav #menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .header-nav #menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .header-nav #menu-toggle:checked ~ .nav-menu {
+    visibility: visible;
+    left: 0;
+  }
+  .header-nav .menu-btn > span,
+  .header-nav .menu-btn > span::before,
+  .header-nav .menu-btn > span::after {
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .header-nav .nav-menu {
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .header-nav .menu-link {
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .header-nav ul li a:hover {
+    color: #000000;
+  }
+  .header-nav ul li a:hover::before {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

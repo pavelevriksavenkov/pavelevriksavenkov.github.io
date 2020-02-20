@@ -1,0 +1,191 @@
+body {
+    font-family: 'roboto', sans-serif;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    background-color: #000000;
+}
+
+.color {
+    color: #e35505;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-bg {
+    background-color: #b55823;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        .header-nav {
+            #menu-toggle {
+                display: none;
+            }
+            .nav-menu {
+                display: flex;
+            }
+            .menu-link {
+                font-size: 20px;
+                text-decoration: none;
+                color: #ffffff;
+                margin: 0 10px;
+            }
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: end;
+            .contact-link {
+                font-size: 20px;
+                text-decoration: none;
+                color: #ffffff;
+                line-height: 40px;
+            }
+        }
+
+    }
+}
+
+.slider-block {
+    height: 720px;
+    border-bottom: 2px solid #ababab;
+    box-sizing: border-box;
+    .slider-title {
+        font-size: 44px;
+        text-align: center;
+        padding-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-nav {
+        .hamburger-menu {
+            display: block;
+        }
+
+        /* скрываем чекбокс */
+        #menu-toggle {
+            opacity: 0;
+        }
+
+        /* стилизуем кнопку */
+        .menu-btn {
+            display: flex;
+            /* используем flex для центрирования содержимого */
+            align-items: center;
+            /* центрируем содержимое кнопки */
+            position: absolute;
+            top: 0;
+            right: 18px;
+            width: 28px;
+            height: 27px;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        /* добавляем "гамбургер" */
+        .menu-btn>span,
+        .menu-btn>span::before,
+        .menu-btn>span::after {
+            display: block;
+            position: absolute;
+            width: 25px;
+            height: 2px;
+            background-color: #ffffff;
+            ;
+        }
+
+        .menu-btn>span::before {
+            content: '';
+            top: -7px;
+        }
+
+        .menu-btn>span::after {
+            content: '';
+            top: 7px;
+        }
+
+
+        /* контейнер меню */
+        .nav-menu {
+            display: block;
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            width: 100vw;
+            height: 80%;
+            margin: 0;
+            padding: 5px 0 0;
+            list-style: none;
+            background-color: #ffffff;
+            box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+            z-index: 4;
+            opacity: 0.95;
+        }
+
+        /* элементы меню */
+        .menu-link {
+            display: block;
+            padding: 12px 36px;
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 100;
+            text-decoration: none;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .menu-link:hover {
+            background-color: #CFD8DC;
+        }
+
+        #menu-toggle:checked~.menu-btn>span {
+            transform: rotate(45deg);
+        }
+
+        #menu-toggle:checked~.menu-btn>span::before {
+            top: 0;
+            transform: rotate(0);
+        }
+
+        #menu-toggle:checked~.menu-btn>span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+
+        #menu-toggle:checked~.nav-menu {
+            visibility: visible;
+            left: 0;
+        }
+
+        .menu-btn>span,
+        .menu-btn>span::before,
+        .menu-btn>span::after {
+            transition-duration: .25s;
+        }
+
+        .nav-menu {
+            transition-duration: .25s;
+        }
+
+        .menu-link {
+            transition-duration: .25s;
+        }
+
+        ul li a:hover {
+            color: #000000;
+        }
+
+        ul li a:hover::before {
+            animation: none;
+        }
+    }
+}
