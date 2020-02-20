@@ -5,11 +5,4 @@ var mySwiper = new Swiper('.swiper-container', {
         nextEl: '.button-next',
         prevEl: '.button-prev',
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<div class="' + className + '"></div>';
-        },
-    },
 });

@@ -1,8 +1,12 @@
 body {
     font-family: 'roboto', sans-serif;
     text-transform: uppercase;
-    color: #a0a0a0;
+    color: #f9f9f9;
     background-color: #000000;
+}
+
+.header-nav {
+    display: none;
 }
 
 .color {
@@ -54,14 +58,226 @@ body {
 }
 
 .slider-block {
-    height: 720px;
     border-bottom: 2px solid #ababab;
     box-sizing: border-box;
     .slider-title {
+        max-width: 710px;
         font-size: 44px;
         text-align: center;
-        padding-top: 35px;
-        margin-bottom: 35px;
+        padding-top: 90px;
+        margin:0 auto 90px;
+    }
+    .slider {
+        position: relative;
+        margin-bottom: 100px;
+        .button-prev {
+            position: absolute;
+            z-index: 2;
+            bottom: -70px;
+            left: 40%;
+            cursor: pointer;
+        }
+        .button-next {
+            position: absolute;
+            z-index: 2;
+            bottom: -70px;
+            right: 40%;
+            cursor: pointer;
+        }
+        .swiper-wrapper {
+            display: flex;
+            .swiper-slide {
+                width: 1061px;
+                height: 500px;
+                position: relative;
+                .slide-title {
+                    font-size: 30px;
+                    text-align: center;
+                    position: absolute;
+                }
+            }
+            .slide-1 {
+                background-image: url(../img/cam.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .slide-title {
+                    max-width: 312px;
+                    top: 20px;
+                    left: 50px;
+                }
+            }
+
+            .slide-2 {
+                background-image: url(../img/sks.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .slide-title {
+                    max-width: 340px;
+                    top: 30px;
+                    right: 300px;
+                }
+            }
+
+            .slide-3 {
+                background-image: url(../img/optica.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: 5px;
+                .slide-title {
+                    max-width: 390px;
+                    bottom: 50px;
+                    right: 100px;
+                }
+            }
+
+            .slide-4 {
+                background-image: url(../img/skud.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .slide-title {
+                    max-width: 350px;
+                    top: 100px;
+                    right: 280px;
+                }
+            }
+
+            .slide-5 {
+                background-image: url(../img/turniket.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .slide-title {
+                    max-width: 380px;
+                    top: 50px;
+                    left: 70px;
+                }
+            }
+        }
+    }
+}
+
+.advantage-block {
+    border-bottom: 2px solid #ababab;
+    box-sizing: border-box;
+    .advantage-title {
+        font-size: 44px;
+        text-align: center;
+        padding-top: 90px;
+        margin-bottom: 90px;
+    }
+    .advantage-list {
+        list-style-type: none;
+        font-size: 34px;
+        line-height: 60px;
+        margin-bottom: 100px;
+        .period {
+            padding: 0px 33%;
+            font-size: 46px;
+            text-transform: none;
+        }
+    }
+}
+
+.trust-block {
+    border-bottom: 2px solid #ababab;
+    box-sizing: border-box;
+    .trust-title {
+        font-size: 44px;
+        text-align: center;
+        padding-top: 90px;
+        margin-bottom: 90px;
+    }
+    .trust-description {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        .trust-list {
+            font-size: 24px;
+            line-height: 40px;
+            padding-left: 20px;
+            padding-top: 30px;
+            .trust-item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.contact-block {
+    border-bottom: 2px solid #ababab;
+    box-sizing: border-box;
+    .contact-title {
+        font-size: 44px;
+        text-align: center;
+        padding-top: 90px;
+        margin-bottom: 90px;
+    }
+    .contact-list {
+        font-size: 30px;
+        line-height: 60px;
+        margin-bottom: 100px;
+    }
+}
+
+.feedback-block {
+    border-bottom: 2px solid #ababab;
+    box-sizing: border-box;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .feedback-title {
+        max-width: 640px;
+        font-size: 44px;
+        text-align: center;
+        padding-top: 90px;
+        margin:0 auto 90px;
+    }
+    .feedback-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .input {
+            margin: 0px 50px;
+            padding: 10px 40px;
+            border-radius: 20px;
+            font-size: 24px;
+        }
+    }
+    .feedback-btn {
+        padding: 10px 50px;
+        border: none;
+        border-radius: 20px;
+        font-size: 24px;
+        background-color: #b55823;
+        color: #ffffff;
+        margin: 90px auto;
+    }
+}
+
+.footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    .copyright {
+        margin-right: auto;
+    }
+    .slash {
+        margin-right: 20px;
+    }
+    .footer-link {
+        margin-right: 20px;
+    }
+    .copyright, .footer-link, .slash {
+        text-decoration: none;
+        font-size: 18px;
+        color: #303030;
     }
 }
 
