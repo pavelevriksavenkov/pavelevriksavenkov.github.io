@@ -223,13 +223,26 @@ body {
     .feedback-form {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         .input {
-            margin: 0px 50px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0px auto 30px;
             padding: 14px 50px;
             border-radius: 20px;
             font-size: 20px;
-            color: #934937;
+        }
+        textarea {
+            height: 100px;
+        }
+        p {
+            font-size: 14px;
+            max-width: 430px;
+            margin: 0 auto 30px;
+            .star {
+                color: #e35505;
+            }
         }
     }
     .feedback-btn {
@@ -239,7 +252,7 @@ body {
         font-size: 24px;
         background-color: #b55823;
         color: #ffffff;
-        margin: 90px auto;
+        margin: 60px auto;
     }
 }
 
@@ -526,16 +539,18 @@ body {
         .feedback-form {
             flex-direction: column;
             .input {
+                max-width: 200px;
                 margin: 0 auto 20px;
                 padding: 10px 30px;
                 border-radius: 20px;
                 font-size: 12px;
             }
+            textarea {
+                height: 80px;
+            }
             p {
+                max-width: 200px;
                 font-size: 10px;
-                .star {
-                    color: #e35505;
-                }
             }
         }
         .feedback-btn {
