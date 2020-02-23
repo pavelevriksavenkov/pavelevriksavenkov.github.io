@@ -257,6 +257,10 @@ body {
   margin-bottom: 100px;
 }
 
+.contact-block .contact-list .contact-link {
+  text-decoration: none;
+}
+
 .feedback-block {
   border-bottom: 2px solid #ababab;
   -webkit-box-sizing: border-box;
