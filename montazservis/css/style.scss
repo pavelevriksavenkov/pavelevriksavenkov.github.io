@@ -18,6 +18,10 @@ body {
 
 .title {
     font-size: 44px;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 90px;
+    margin:0 auto 90px;
 }
 
 .header-bg {
@@ -63,9 +67,6 @@ body {
     box-sizing: border-box;
     .slider-title {
         max-width: 710px;
-        text-align: center;
-        padding-top: 90px;
-        margin:0 auto 90px;
     }
     .slider {
         position: relative;
@@ -163,18 +164,12 @@ body {
 .advantage-block {
     border-bottom: 2px solid #ababab;
     box-sizing: border-box;
-    .advantage-title {
-        text-align: center;
-        padding-top: 90px;
-        margin-bottom: 90px;
-    }
     .advantage-list {
         list-style-type: none;
         font-size: 34px;
         line-height: 60px;
         margin-bottom: 100px;
         .period {
-            padding: 0px 33%;
             font-size: 46px;
             text-transform: none;
         }
@@ -184,11 +179,6 @@ body {
 .trust-block {
     border-bottom: 2px solid #ababab;
     box-sizing: border-box;
-    .trust-title {
-        text-align: center;
-        padding-top: 90px;
-        margin-bottom: 90px;
-    }
     .trust-description {
         display: flex;
         justify-content: space-between;
@@ -208,11 +198,6 @@ body {
 .contact-block {
     border-bottom: 2px solid #ababab;
     box-sizing: border-box;
-    .contact-title {
-        text-align: center;
-        padding-top: 90px;
-        margin-bottom: 90px;
-    }
     .contact-list {
         font-size: 30px;
         line-height: 60px;
@@ -230,9 +215,6 @@ body {
     }
     .feedback-title {
         max-width: 640px;
-        text-align: center;
-        padding-top: 90px;
-        margin:0 auto 90px;
     }
     .feedback-form {
         width: 100%;
@@ -278,127 +260,286 @@ body {
     }
 }
 
-@media screen and (max-width: 760px) {
-    .header-nav {
-        .hamburger-menu {
-            display: block;
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 16px;
+        padding-top: 50px;
+        margin: 0 auto 40px;
+    }
+    .header-bg {
+        .header {
+            .logo {
+                padding-left: 15px;
+                .logo-img {
+                    max-width: 100px;
+                }
+            }
+
+            .contacts {
+                display: none;
+            }
+
+            .header-nav {
+                .hamburger-menu {
+                    display: block;
+                }
+
+                /* скрываем чекбокс */
+                #menu-toggle {
+                    opacity: 0;
+                }
+
+                /* стилизуем кнопку */
+                .menu-btn {
+                    display: flex;
+                    /* используем flex для центрирования содержимого */
+                    align-items: center;
+                    /* центрируем содержимое кнопки */
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    width: 28px;
+                    height: 27px;
+                    cursor: pointer;
+                    z-index: 5;
+                }
+
+                /* добавляем "гамбургер" */
+                .menu-btn>span,
+                .menu-btn>span::before,
+                .menu-btn>span::after {
+                    display: block;
+                    position: absolute;
+                    width: 25px;
+                    height: 2px;
+                    background-color: #ffffff;
+                    ;
+                }
+
+                .menu-btn>span::before {
+                    content: '';
+                    top: -7px;
+                }
+
+                .menu-btn>span::after {
+                    content: '';
+                    top: 7px;
+                }
+
+
+                /* контейнер меню */
+                .nav-menu {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    visibility: hidden;
+                    top: 0;
+                    width: 100%;
+                    max-width: 375px;
+                    margin: 0;
+                    padding: 60px 0 60px;
+                    list-style: none;
+                    background-color: #000000;
+                    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+                    z-index: 4;
+                    opacity: 0.9;
+                }
+
+                /* элементы меню */
+                .menu-link {
+                    display: block;
+                    padding: 10px 0;
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: 3px;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 1.4;
+                }
+
+                .menu-link:hover {
+                    background-color: #CFD8DC;
+                    color: #000000;
+                }
+
+                #menu-toggle:checked~.menu-btn>span {
+                    transform: rotate(45deg);
+                }
+
+                #menu-toggle:checked~.menu-btn>span::before {
+                    top: 0;
+                    transform: rotate(0);
+                }
+
+                #menu-toggle:checked~.menu-btn>span::after {
+                    top: 0;
+                    transform: rotate(90deg);
+                }
+
+                #menu-toggle:checked~.nav-menu {
+                    visibility: visible;
+                    left: 0;
+                }
+
+                .menu-btn>span,
+                .menu-btn>span::before,
+                .menu-btn>span::after {
+                    transition-duration: .25s;
+                }
+
+                .nav-menu {
+                    transition-duration: .25s;
+                }
+
+                .menu-link {
+                    transition-duration: .25s;
+                }
+
+                ul li a:hover {
+                    color: #000000;
+                }
+
+                ul li a:hover::before {
+                    animation: none;
+                }
+            }
         }
-
-        /* скрываем чекбокс */
-        #menu-toggle {
-            opacity: 0;
+    }
+    .slider-block {
+        .slider-title {
+            max-width: 260px;
         }
-
-        /* стилизуем кнопку */
-        .menu-btn {
-            display: flex;
-            /* используем flex для центрирования содержимого */
-            align-items: center;
-            /* центрируем содержимое кнопки */
-            position: absolute;
-            top: 0;
-            right: 18px;
-            width: 28px;
-            height: 27px;
-            cursor: pointer;
-            z-index: 5;
+        .slider {
+            margin-bottom: 40px;
+            .button-prev {
+                bottom: -30px;
+                left: 20%;
+                img {
+                    max-width: 15px;
+                }
+            }
+            .swiper-container {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        height: 150px;
+                        .slide-title {
+                            font-size: 12px;
+                            line-height: 1.2;
+                        }
+                    }
+                    .slide-1 {
+                        .slide-title {
+                            max-width: 150px;
+                            top: 0px;
+                            left: 0px;
+                        }
+                    }
+                    .slide-2 {
+                        .slide-title {
+                            max-width: 140px;
+                            top: 10px;
+                            right: 20px;
+                        }
+                    }
+                    .slide-3 {
+                        .slide-title {
+                            max-width: 160px;
+                            bottom: 8px;
+                            right: 30px;
+                        }
+                    }
+                    .slide-4 {
+                        .slide-title {
+                            max-width: 140px;
+                            top: 10px;
+                            right: 20px;
+                        }
+                    }
+                    .slide-5 {
+                        .slide-title {
+                            max-width: 80px;
+                            top: 20px;
+                            left: 30px;
+                        }
+                    }
+                }
+            }
+            .button-next {
+                bottom: -30px;
+                right: 20%;
+                img {
+                    max-width: 15px;
+                }
+            }
         }
-
-        /* добавляем "гамбургер" */
-        .menu-btn>span,
-        .menu-btn>span::before,
-        .menu-btn>span::after {
-            display: block;
-            position: absolute;
-            width: 25px;
-            height: 2px;
-            background-color: #999999;
-            ;
+    }
+    
+    .advantage-block {
+        .advantage-list {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 40px;
+            padding: 0 15px;
+            .list-item {
+                margin-bottom: 10px;
+                .period {
+                    font-size: 24px;
+                }
+            }
         }
+    }
 
-        .menu-btn>span::before {
-            content: '';
-            top: -7px;
+    .trust-block {
+        .trust-description {
+            margin-bottom: 40px;
+            .trust-list {
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0 15px;
+            }
         }
+    }
 
-        .menu-btn>span::after {
-            content: '';
-            top: 7px;
+    .contact-block {
+        .contact-list {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 auto 40px;
+            max-width: 200px;
         }
+    }
 
-
-        /* контейнер меню */
-        .nav-menu {
-            display: block;
-            position: absolute;
-            visibility: hidden;
-            top: 0;
-            width: 100%;
-            max-width: 375px;
-            margin: 0;
-            padding: 60px 0 60px;
-            list-style: none;
-            background-color: #000000;
-            box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
-            z-index: 4;
-            opacity: 0.9;
+    .feedback-block {
+        .feedback-title {
+            max-width: 240px;
         }
-
-        /* элементы меню */
-        .menu-link {
-            display: block;
-            padding: 12px 36px;
-            color: #ffffff;
-            font-size: 24px;
-            font-weight: 100;
-            text-decoration: none;
-            text-align: left;
-            line-height: 1.4;
+        .feedback-form {
+            flex-direction: column;
+            .input {
+                margin: 0 auto 20px;
+                padding: 10px 30px;
+                border-radius: 20px;
+                font-size: 12px;
+            }
         }
-
-        .menu-link:hover {
-            background-color: #CFD8DC;
+        .feedback-btn {
+                padding: 10px 44px;
+                font-size: 14px;
+                margin: 10px auto 40px;
         }
+    }
 
-        #menu-toggle:checked~.menu-btn>span {
-            transform: rotate(45deg);
+    .footer {
+        flex-direction: column;
+        max-width: 180px;
+        margin: 20px auto;
+        .slash {
+            display: none;
         }
-
-        #menu-toggle:checked~.menu-btn>span::before {
-            top: 0;
-            transform: rotate(0);
-        }
-
-        #menu-toggle:checked~.menu-btn>span::after {
-            top: 0;
-            transform: rotate(90deg);
-        }
-
-        #menu-toggle:checked~.nav-menu {
-            visibility: visible;
-            left: 0;
-        }
-
-        .menu-btn>span,
-        .menu-btn>span::before,
-        .menu-btn>span::after {
-            transition-duration: .25s;
-        }
-
-        .nav-menu {
-            transition-duration: .25s;
-        }
-
-        .menu-link {
-            transition-duration: .25s;
-        }
-
-        ul li a:hover {
-            color: #000000;
-        }
-
-        ul li a:hover::before {
-            animation: none;
+        .copyright,
+        .footer-link {
+            font-size: 10px;
         }
     }
 }
