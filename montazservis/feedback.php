@@ -1,78 +1,59 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Веб-студия &quot;FRESH WEB&quot; предлагает полный комплекс услуг для проектов любого уровня и
-                    любой стадии готовности - от начальной, когда есть лишь идея, нуждающаяся в разработке,
-                    создании инструментов и продвижении, до заключительной, когда ресурсу необходима только
-                    поддержка.">
-    <link rel="shortcut icon" href="/img/favicon.ico"/>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <title>Fresh WEB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <title>Монтаж-сервис</title>
 </head>
 <body>
-<header class="header">
-    <div class="logo">
-        <a href="index.html">
-            <img src="img/logo.png" alt="logo">
-        </a>
-    </div>
-
-
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
-        <ul class="menu__box">
-            <li>
-                <a class="menu__item" href="index.html">Главная</a>
-            </li>
-            <li>
-                <a class="menu__item" href="about.html">О&nbsp;компании</a>
-            </li>
-            <li>
-                <a class="menu__item" href="projects.html">Наши&nbsp;проекты</a>
-            </li>
-            <li>
-                <a class="menu__item" href="services.html">Услуги</a>
-            </li>
-            <li>
-                <a class="menu__item" href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-    </div>
-
-
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="about.html">О&nbsp;компании</a>
-            </li>
-            <li>
-                <a href="projects.html">Наши&nbsp;проекты</a>
-            </li>
-            <li>
-                <a href="services.html">Услуги</a>
-            </li>
-            <li>
-                <a href="contacts.html">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="nav-contacts">
-        <a href="tel:+7(963)0479220">+7&nbsp;(963)&nbsp;047&nbsp;92&nbsp;20</a><br>
-        <a href="mailto:freshweb@gmail.com">sale@freshw.ru</a>
-    </div>
-</header>
+    <header class="header-bg">
+        <div class="container">
+            <div class="header">
+                <div class="logo"><img src="img/logo.png" alt="logo" class="logo-img"></div>
+                <nav class="header-nav">
+                    <input id="menu-toggle" type="checkbox">
+                    <label class="menu-btn" for="menu-toggle">
+                        <span></span>
+                    </label>
+                    <ul class="nav-menu">
+                        <li class="menu-item">
+                            <a href="index.html" class="menu-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="about.html" class="menu-link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="work.html" class="menu-link">
+                                виды работ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contacts.html" class="menu-link">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contacts">
+                    <a href="tel:+79000000000" class="contact-link">
+                        +7 (900) 000 00 00
+                    </a>
+                    <a href="mailto:" class="contact-link">
+                        montazhplus@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
 <body>
 
@@ -104,5 +85,23 @@ else {
 ?>;
 </div>
 
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <span class="copyright">
+                    &copy;2020-<script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script>. Все права защищены.
+                </span>
+                <a href="tel:89000000000" class="footer-link">
+                    +7 (900) 000 00 00
+                </a>
+                <span class="slash">|</span>
+                <a href="mailto:montazh@gmail.com" class="footer-link">
+                    montazh@gmail.com
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
