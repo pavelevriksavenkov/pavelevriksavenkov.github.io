@@ -77,13 +77,16 @@
         <div class="feedback-block">
             <div class="container">
                 <h2 class="feedback-title title">или <span class="color">оставить заявку</span> и мы сами с вами свяжемся</h2>
-                <form action="" class="feedback-form">
-                    <input type="text" class="input" value="имя/компания">
-                    <input type="text" class="input" value="телефон">
+                <form action="feedback.php" method="post" class="feedback-form">
+                    <input class="input" type="text" required="" placeholder="*Имя/компания" name="name">
+                    <input class="input" type="email" placeholder="E-mail" name="mail">
+                    <input class="input" type="tel" required="" placeholder="*Телефон" name="phone">
+                    <textarea class="input" placeholder="Описание" name="message"></textarea>
+                    <p> <span class="star">*</span> - обязательные поля для заполнения</p>
+                    <input class="feedback-btn" type="submit" value="Отправить заявку">
+                    <p class="button-p">Нажимая кнопку "Отправить", я даю свое соглашение на обработку моих персональных
+                        данных.</p>
                 </form>
-                <button class="feedback-btn">
-                    оставить заявку
-                </button>
             </div>
         </div>
     </main>

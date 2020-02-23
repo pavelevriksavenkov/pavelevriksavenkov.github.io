@@ -531,11 +531,17 @@ body {
                 border-radius: 20px;
                 font-size: 12px;
             }
+            p {
+                font-size: 10px;
+                .star {
+                    color: #e35505;
+                }
+            }
         }
         .feedback-btn {
-                padding: 10px 44px;
-                font-size: 14px;
-                margin: 10px auto 40px;
+            padding: 10px 44px;
+            font-size: 14px;
+            margin: 10px auto 40px;
         }
     }
 

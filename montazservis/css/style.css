@@ -573,6 +573,12 @@ body {
     border-radius: 20px;
     font-size: 12px;
   }
+  .feedback-block .feedback-form p {
+    font-size: 10px;
+  }
+  .feedback-block .feedback-form p .star {
+    color: #e35505;
+  }
   .feedback-block .feedback-btn {
     padding: 10px 44px;
     font-size: 14px;
