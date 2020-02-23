@@ -17,6 +17,10 @@ body {
   text-align: center;
 }
 
+.title {
+  font-size: 44px;
+}
+
 .header-bg {
   background-color: #b55823;
 }
@@ -80,7 +84,6 @@ body {
 
 .slider-block .slider-title {
   max-width: 710px;
-  font-size: 44px;
   text-align: center;
   padding-top: 90px;
   margin: 0 auto 90px;
@@ -198,7 +201,6 @@ body {
 }
 
 .advantage-block .advantage-title {
-  font-size: 44px;
   text-align: center;
   padding-top: 90px;
   margin-bottom: 90px;
@@ -224,7 +226,6 @@ body {
 }
 
 .trust-block .trust-title {
-  font-size: 44px;
   text-align: center;
   padding-top: 90px;
   margin-bottom: 90px;
@@ -258,7 +259,6 @@ body {
 }
 
 .contact-block .contact-title {
-  font-size: 44px;
   text-align: center;
   padding-top: 90px;
   margin-bottom: 90px;
@@ -291,7 +291,6 @@ body {
 
 .feedback-block .feedback-title {
   max-width: 640px;
-  font-size: 44px;
   text-align: center;
   padding-top: 90px;
   margin: 0 auto 90px;
@@ -354,7 +353,7 @@ body {
   color: #303030;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 760px) {
   .header-nav {
     /* скрываем чекбокс */
     /* стилизуем кнопку */
@@ -392,7 +391,7 @@ body {
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #999999;
   }
   .header-nav .menu-btn > span::before {
     content: '';
@@ -407,22 +406,22 @@ body {
     position: absolute;
     visibility: hidden;
     top: 0;
-    width: 100vw;
-    height: 80%;
+    width: 100%;
+    max-width: 375px;
     margin: 0;
-    padding: 5px 0 0;
+    padding: 60px 0 60px;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #000000;
     -webkit-box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
             box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
     z-index: 4;
-    opacity: 0.95;
+    opacity: 0.9;
   }
   .header-nav .menu-link {
     display: block;
     padding: 12px 36px;
     color: #ffffff;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 100;
     text-decoration: none;
     text-align: left;
