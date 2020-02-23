@@ -104,16 +104,24 @@ body {
   position: absolute;
   z-index: 2;
   bottom: -70px;
-  left: 40%;
+  left: 20%;
   cursor: pointer;
+}
+
+.slider-block .slider .button-prev img {
+  max-width: 20px;
 }
 
 .slider-block .slider .button-next {
   position: absolute;
   z-index: 2;
   bottom: -70px;
-  right: 40%;
+  right: 20%;
   cursor: pointer;
+}
+
+.slider-block .slider .button-next img {
+  max-width: 20px;
 }
 
 .slider-block .slider .swiper-wrapper {

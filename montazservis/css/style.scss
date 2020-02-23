@@ -79,15 +79,21 @@ body {
             position: absolute;
             z-index: 2;
             bottom: -70px;
-            left: 40%;
+            left: 20%;
             cursor: pointer;
+            img {
+                max-width: 20px;
+            }
         }
         .button-next {
             position: absolute;
             z-index: 2;
             bottom: -70px;
-            right: 40%;
+            right: 20%;
             cursor: pointer;
+            img {
+                max-width: 20px;
+            }
         }
         .swiper-wrapper {
             display: flex;
