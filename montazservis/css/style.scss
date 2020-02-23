@@ -277,6 +277,18 @@ body {
     }
 }
 
+.feedback-page {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 20px;
+    p {
+        margin-top: 60px;
+        a {
+            color: #e35505;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .title {
         font-size: 16px;

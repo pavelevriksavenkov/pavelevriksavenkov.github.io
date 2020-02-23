@@ -61,10 +61,8 @@
 <?php
 $back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
 
-if(!empty($_POST['name']) and !empty($_POST['mail']) and !empty($_POST['company']) and !empty($_POST['phone'])
-    and !empty($_POST['message'])){
+if(!empty($_POST['name']) and !empty($_POST['phone'])){
     $name = trim(strip_tags($_POST['name']));
-    $company = trim(strip_tags($_POST['company']));
     $mail = trim(strip_tags($_POST['mail']));
     $phone = trim(strip_tags($_POST['phone']));
     $message = trim(strip_tags($_POST['message']));
