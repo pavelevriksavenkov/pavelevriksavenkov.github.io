@@ -69,7 +69,7 @@ if(!empty($_POST['name']) and !empty($_POST['mail']) and !empty($_POST['company'
     $phone = trim(strip_tags($_POST['phone']));
     $message = trim(strip_tags($_POST['message']));
 
-    mail('sale@freshw.ru', 'Письмо с FRESHW.RU',
+    mail('savenkovp85@gmail.com', 'Письмо с montazh.ru',
         'Вам написал: '.$name.'<br />Его номер: '.$phone.'<br />Его почта: '.$mail.'<br />
       Его сообщение: '.$message,"Content-type:text/html;charset=UTF-8");
 
