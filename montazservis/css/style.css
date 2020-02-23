@@ -15,6 +15,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 
 .title {
@@ -27,6 +28,10 @@ body {
 
 .header-bg {
   background-color: #b55823;
+}
+
+.header-bg .container {
+  overflow: visible;
 }
 
 .header-bg .header {
@@ -405,6 +410,7 @@ body {
     position: absolute;
     visibility: hidden;
     top: 0;
+    left: 0;
     width: 100%;
     max-width: 375px;
     margin: 0;
