@@ -595,6 +595,12 @@ body {
             font-size: 10px;
         }
     }
+
+    .work-block {
+        .work-list {
+            flex-direction: column;
+        }
+    }
 }
 
 .work-block, .brends-block {

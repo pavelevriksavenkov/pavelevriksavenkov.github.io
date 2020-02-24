@@ -646,6 +646,12 @@ body {
   .footer .footer-link {
     font-size: 10px;
   }
+  .work-block .work-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .work-block, .brends-block {
