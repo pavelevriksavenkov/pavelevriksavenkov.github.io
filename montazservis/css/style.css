@@ -2,7 +2,7 @@
 body {
   font-family: 'roboto', sans-serif;
   text-transform: uppercase;
-  color: #f9f9f9;
+  color: #ababab;
   background-color: #000000;
 }
 
@@ -646,5 +646,116 @@ body {
   .footer .footer-link {
     font-size: 10px;
   }
+}
+
+.work-block, .brends-block {
+  border-bottom: 2px solid #ababab;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 80px;
+}
+
+.work-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-item .img-block .img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  margin-bottom: 20px;
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.work-item .description {
+  width: 100%;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.work-item .description .description-list {
+  list-style-type: disc;
+}
+
+.work-item .description .description-list .list-item {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.brends .title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.brends .subtitle {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  line-height: 1.3;
+}
+
+.brends .brends-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 120px auto 80px;
+}
+
+.work-block .work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work-block .work-list .work-link {
+  width: 33.33333%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.work-block .work-list .work-link .title {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.work-block .work-list .work-link .work-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work-block .work-list .work-link .work-item .img {
+  overflow: hidden;
+}
+
+.work-block .work-list .work-link .work-item .img img {
+  width: 90%;
+  opacity: 0.7;
+  background-color: #000000;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 /*# sourceMappingURL=style.css.map */
