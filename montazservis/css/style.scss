@@ -172,6 +172,20 @@ body {
                     left: 70px;
                 }
             }
+            .slide-6 {
+                background-image: url(../img/wifi-most.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                color: #000;
+                background-color: #fff;
+
+                .slide-title {
+                    max-width: 380px;
+                    top: 30px;
+                    right: 40px;
+                }
+            }
         }
     }
 }

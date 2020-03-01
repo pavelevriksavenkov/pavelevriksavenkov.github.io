@@ -213,6 +213,21 @@ body {
   left: 70px;
 }
 
+.slider-block .slider .swiper-wrapper .slide-6 {
+  background-image: url(../img/wifi-most.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+  background-color: #fff;
+}
+
+.slider-block .slider .swiper-wrapper .slide-6 .slide-title {
+  max-width: 380px;
+  top: 30px;
+  right: 40px;
+}
+
 .advantage-block {
   border-bottom: 2px solid #ababab;
   -webkit-box-sizing: border-box;
